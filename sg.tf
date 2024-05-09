@@ -1,7 +1,7 @@
 
 
 resource "aws_security_group" "sg1" {
-    name = "Terraform-baba"
+    name = "Terraform-1"
     description = "Allow ssh and httpd"
     vpc_id = aws_vpc.vpc1.id
    
