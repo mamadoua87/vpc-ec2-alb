@@ -6,7 +6,7 @@ resource "aws_instance" "server1" {
     subnet_id = aws_subnet.private1.id
     user_data = file("code.sh")
     tags= {
-      name = "var.ENVIRONMENT"
+      name = var.ENVIRONMENT
 }
 }
 
