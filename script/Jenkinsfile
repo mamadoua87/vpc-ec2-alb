@@ -19,11 +19,9 @@ pipeline{
         }  
         stage('plan'){
             steps{
-                sh 'terraform plan -no-color'
+                sh 'terraform plan -lock=false -no-color'
             }
         }  
-    
     }
-
 }
     
